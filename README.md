@@ -10,4 +10,4 @@ This website is designed as a CRUD (Create, Read, Update, Delete) application us
 
 This implementation not only demonstrates the application of OOP concepts in JavaScript but also provides a practical solution for managing product inventories effectively.
 
-#Try it out yourself, [add yours now!](https://stanmicro9.github.io/CRUD-refactoring-oop/) PS: make sure to disable all chrome extensions before trying it out
+- Try it out yourself, [add yours now!](https://stanmicro9.github.io/CRUD-refactoring-oop/) PS: make sure to disable all chrome extensions before trying it out
