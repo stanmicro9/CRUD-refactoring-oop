@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Refactor</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Form Contrianer -->
+    <div class="w-75 mx-auto py-5 px-3 rounded-3 shadow-lg mt-5">
+      <h1>CRUD Project</h1>
+
+      <!-- Product Form  -->
+      <form id="product-form">
+        <div class="mb-3">
+          <label for="product_name" class="form-label">Proudct Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="product_name"
+            placeholder="name@example.com"
+          />
+          <div class="invalid-feedback"></div> <!-- Feedback div for product name -->
+        </div>
+        <div class="mb-3">
+          <label for="product_category" class="form-label"
+            >Proudct Category</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="product_category"
+            placeholder="name@example.com"
+          />
+          <div class="invalid-feedback"></div> <!-- Feedback div for product category -->
+        </div>
+        <div class="mb-3">
+          <label for="product_price" class="form-label">Proudct Price</label>
+          <input
+            type="text"
+            class="form-control"
+            id="product_price"
+            placeholder="name@example.com"
+          />
+          <div class="invalid-feedback"></div> <!-- feedback div for product price -->
+        </div>
+        <div class="mb-3">
+          <label for="prodct_desc" class="form-label">Product Desc</label>
+          <textarea class="form-control" id="prodct_desc" rows="3"></textarea>
+          <div class="invalid-feedback"></div> <!-- feedback div for product description -->
+        </div>
+
+        <button id="create-btn" class="btn btn-primary" type="button">Add Product</button>
+        <button id="clear-btn" class="btn btn-primary" type="button">
+          Clear
+        </button>
+      </form>
+    </div>
+
+    <!-- product search -->
+    <div class="my-5 w-75 mx-auto">
+      <input
+        type="text"
+        class="form-control"
+        id="query"
+        placeholder="search by product name.."
+      />
+    </div>
+    
+    <!-- products table -->
+    <div id="product-table-container" class="w-75 mx-auto my-5 d-none">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>index</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Disc</th>
+            <th>Update</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+    </div>
+
+    <div id="warning-msg" class="w-75 mx-auto my-5 d-none">
+      <div class="alert alert-warning" role="alert">
+        Warning! No data available
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
