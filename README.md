@@ -9,3 +9,5 @@ This website is designed as a CRUD (Create, Read, Update, Delete) application us
 * User-Friendly Interface: The design prioritizes usability, with clear form layouts and intuitive navigation, making product management straightforward for users of all skill levels.
 
 This implementation not only demonstrates the application of OOP concepts in JavaScript but also provides a practical solution for managing product inventories effectively.
+
+Try it out yourself, add your now!
